@@ -1,0 +1,245 @@
+
+
+body{
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+  }
+  .container{
+    width: 60%;
+    height: auto;
+  }
+
+  .header{
+    height: auto;
+    background-color: orangered;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .header button{
+    height: 50px;
+    width: 10%;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: #3498db;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+    visibility: hidden;
+    margin: 0 20px;
+  }
+  .header button:hover{
+    color: white;
+  }
+
+  #userName{
+    margin: 0 10px;
+    padding: 10px;
+  }
+
+  .header input[type="text"]{
+    width: 50%;
+    height: 50px;
+    font-size: 25px;
+  }
+
+  #chatbody{
+    height: 450px;
+    background-color: #f1f2f6;
+    font-size: 18px;
+    /* overflow: auto; */
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+
+  #startbox{
+    height: 100%;
+    width: 100%;
+    background-color: #dcdde1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #startbox i{
+    font-size: 170px; 
+    color: #2c3e50;
+  }
+  #startbox p{
+    font-size: 60px;
+    margin: 10px 0; 
+    color: #2c3e50;
+  }
+  #startbox  button{
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #4cd137;
+    width: 130px;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    padding-left: 20px;
+    transition: .3s;
+    box-sizing: border-box;
+    outline: none;
+  }
+
+  #startbox button:hover{
+    box-shadow: 3px 3px 5px #353b48;
+    transition: .3s;
+  }
+  .sendmsg{
+    background-color: #bdc3c7;
+    height:auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .sendmsg input[type="text"]{
+    width: 80%;
+    height: 50px;
+    font-size: 18px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    margin: 10px;
+    padding-left: 20px;
+  }
+
+  .row{
+    width: 100%;
+    height: auto;
+    background-color: red;
+  }
+  .row .sent_msg_box{
+    height: auto;
+    min-width: 50%;
+    max-width: 80%;
+    background-color: #82ccdd;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    float: right;
+  }
+
+  .receive_msg_box{
+    height: auto;
+    min-width: 50%;
+    max-width: 80%;
+    background-color: #badc58;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    float: left;
+  }
+
+  
+  
+  @media screen and (max-width: 250px){
+    .container {
+      width: 100%;
+    }
+    .chatbody{
+      height: 450px;
+    }
+    #startbox{
+      height: 450px;
+    }
+    #logoutbtn{
+      width: 150px;
+    }
+
+    #startbox i{
+      font-size: 50px; 
+      color: #2c3e50;
+    }
+    #startbox p{
+      font-size: 20px;
+      margin: 10px 0; 
+      color: #2c3e50;
+    }
+  } 
+
+
+  @media screen and (min-width: 251px) and (max-width: 500px){
+    .container {
+      width: 100%;
+    }
+    .chatbody{
+      height: 450px;
+    }
+    #startbox{
+      height: 450px;
+    }
+    #logoutbtn{
+      width: 150px;
+    }
+
+    #startbox i{
+      font-size: 100px; 
+      color: #2c3e50;
+    }
+    #startbox p{
+      font-size: 50px;
+      margin: 10px 0; 
+      color: #2c3e50;
+    }
+  } 
+
+  @media screen and (min-width: 501px) and (max-width: 700px) {
+    .container {
+      width: 90%;
+    }
+    .chatbody{
+      height: 450px;
+    }
+    #startbox{
+      height: 450px;
+    }
+    #logoutbtn{
+      width: 150px;
+    }
+
+    #startbox i{
+      font-size: 100px; 
+      color: #2c3e50;
+    }
+    #startbox p{
+      font-size: 50px;
+      margin: 10px 0; 
+      color: #2c3e50;
+    }
+  } 
+
+  @media screen and (min-width: 701px) and (max-width: 1600px) {
+    .container {
+      width: 80%;
+    }
+    .chatbody{
+      height: 450px;
+    }
+    #startbox{
+      height: 450px;
+    }
+    #logoutbtn{
+      width: 150px;
+    }
+
+    #startbox i{
+      font-size: 100px; 
+      color: #2c3e50;
+    }
+    #startbox p{
+      font-size: 50px;
+      margin: 10px 0; 
+      color: #2c3e50;
+    }
+  } 
